@@ -18,6 +18,7 @@
     "password": "tZQCm0VNFRuO74i",
     "host": "dbnewsp3c1.internal",
     "database": "db_news_p3_c1",
-    "use_env_variable": "DATABASE_URI"
+    "use_env_variable": "DATABASE_URI",
+    "dialect": "postgres"
   }
 }
