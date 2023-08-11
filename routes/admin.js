@@ -11,8 +11,8 @@ router
   .use(auth)
   .post("/categories", adminController.postCategory)
   .post("/posts", adminController.postPost)
-  .put("/categories/:categoryId", authorized, adminController.putCategory)
-  .delete("/categories/:categoryId", authorized, adminController.deleteCategory)
+  .put("/categories/:categoryId", adminController.putCategory)
+  .delete("/categories/:categoryId", adminController.deleteCategory)
   .put("/posts/:postId", authorized, adminController.putPost)
   .delete("/posts/:postId", authorized, adminController.deletePost);
 
