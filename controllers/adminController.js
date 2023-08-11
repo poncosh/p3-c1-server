@@ -189,7 +189,7 @@ const postPost = async (req, res, next) => {
       }
     );
 
-    if (data) {
+    if (data.length > 0) {
       throw { name: "InvalidPost" };
     }
 
