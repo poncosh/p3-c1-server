@@ -70,8 +70,8 @@ module.exports = (sequelize, DataTypes) => {
   Post.addHook("beforeCreate", (instance, options) => {
     instance.slug = instance.title
       .toLowerCase()
-      .split(" ")
       .replace(/[^a-zA-Z ]/g, "")
+      .split(" ")
       .join("-");
   });
   return Post;
