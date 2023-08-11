@@ -71,8 +71,8 @@ module.exports = (sequelize, DataTypes) => {
     instance.slug = instance.title
       .toLowerCase()
       .split(" ")
-      .join("-")
-      .replace(/[^\w\s]/gi, "");
+      .replace(/[^a-zA-Z ]/g, "")
+      .join("-");
   });
   return Post;
 };
